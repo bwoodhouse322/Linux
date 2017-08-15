@@ -1,0 +1,5 @@
+#!/bin/bash
+read -p "specify file" file
+count= wc -l $file 
+read -p"specify file name" fileName
+ wc > $fileName

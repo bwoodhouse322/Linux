@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "Today is "; date 
+echo "Number of user login : " ; who 
+echo "Calendar"
+cal
+date > Logfile.txt
+ who >> Logfile.txt
+
+

@@ -1,0 +1,27 @@
+#!/bin/bash
+
+read -p "paper, scissors or rock (1,2,3)" input
+botChoice=$((1+RANDOM%3))
+echo "$botChoice"
+
+if [ "$input" == "$botChoice" ]; then
+	echo "DRAW"
+	exit 0;
+
+fi
+if [ $input == 1 ] && [ $botChoice == 3 ]; then
+	echo "WIN"
+	exit 0;
+fi
+if [ $input == 3 ] && [ $botChoice == 1 ] ; then
+	echo "LOSS"
+	exit 0;
+fi
+if [ $input -gt $botChoice ]; then
+	echo "WIN"
+	exit 0;
+fi
+
+echo "LOSS"
+
+

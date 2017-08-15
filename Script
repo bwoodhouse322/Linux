@@ -1,0 +1,9 @@
+#!/bin/bash
+mkdir ScriptFolder
+cd ScriptFolder
+touch text.txt
+touch text2.txt
+mv text.txt ~/Desktop
+mv text2.txt text2.sh
+pwd
+
